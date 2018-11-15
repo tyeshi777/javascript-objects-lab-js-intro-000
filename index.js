@@ -11,11 +11,7 @@ function deleteFromObjectByKey(object, key) {
   delete clone[key];
   return clone;
 }
-// function deleteFromObjectByKey(object, key) {
-//   let newObject = Object.assign({}, object);
-//   delete object[key];
-//   return newObject;
-// }
+
 function destructivelyDeleteFromObjectByKey(object, key) {
   delete object[key];
   return object;
